@@ -19,7 +19,7 @@ body{
     background-color: rgba(0, 0, 0, 0.68);
     color: rgb(252, 252, 252);
     width: 100%;
-    max-width: 250px;
+    max-width: 290px;
     border-radius: 10%;
     text-align: center;
     box-shadow: 0px 0px 8px 3px rgba(53, 53, 53, 0.68);
@@ -30,6 +30,8 @@ body{
     align-items: center;
     align-items: center;
     margin-bottom: 4rem;
+    position: relative;
+    right: -10px;
 }
 .searchBar{
     width: 70%;
@@ -61,16 +63,51 @@ button:hover{
     color: rgb(255, 255, 255);
 }
 .temp{
-    font-size: 4.5rem;
-    margin-top: 2rem;
-    margin-bottom: .5rem;
+    font-size: 4rem;
+    margin:0;
+}
+.feelsLike{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+
 }
 
+.temperature{
+    margin-top: 0;
+}
+.country{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .location{
     font-size: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0s;
+}
+.flag{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0;
+    margin-bottom: 2.5rem;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo{
-    margin-bottom: 2rem;
+    margin-bottom: none;
+}
+
+.description{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: none;
 }
