@@ -7,10 +7,21 @@ let weather = {
             console.log(weatherData);
         })
     },
-    
+
+    search: function(){
+        this.axiosWeather(document.querySelector('.searchBar').value);
+    }
+
 };
 
 
-weather.axiosWeather('Denver');
+document.querySelector('.searchCity').addEventListener('click', function(){
+    weather.search();
+});
 
-
+document.querySelector('.searchBar').addEventListener('keypress',function(enter){
+    if(enter.key === 'Enter'){
+        weather.search();
+        document.querySelector('.searchBar').value = '';
+    }
+});
