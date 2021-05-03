@@ -4,7 +4,7 @@ let weather = {
     axiosWeather: function(city){
         axios.get('http://api.openweathermap.org/data/2.5/weather?q='+ city +'&units=metric&appid=' + this.apiKey)
         .then(weatherData => {
-            console.log(weatherData);
+            //console.log(weatherData); This was a test
             this.displayData(weatherData);
         })
     },
@@ -17,7 +17,7 @@ let weather = {
         const{icon} = data.data.weather[0];
         const{description} = data.data.weather[0];
 
-        console.log(name, country,temp,icon, description);
+        //console.log(name, country,temp,icon, description); This was just a testing
         
         document.querySelector('.location').innerText = name+',' + country;
         document.querySelector('.temp').innerText = parseFloat((temp).toFixed(1)) +'°C';
